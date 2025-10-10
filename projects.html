@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Projects</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+                                <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Florentin JAFFREDO Atom Feed" />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">Florentin JAFFREDO</a></h1>
+                                <div id="language-toggle" style="text-align:right; margin-top:5px;">
+
+                                <a href="/fr/projects.html">🇫🇷 Français</a>
+                                </div>
+                        <nav><ul>
+
+                                
+                                                <li><a href="/contact.html">Contact</a></li>
+                                                <li><a href="/cv.html">CV</a></li>
+                                                <li class="active"><a href="/projects.html">Projects</a></li>
+                                                <li><a href="/publications.html">Publication List</a></li>
+                        </ul></nav>
+                        <style>
+                        #language-toggle {
+                        max-width: 800px;          /* match your body width (notmyidea uses ~800px) */
+                        margin: 0 auto;            /* center align within that width */
+                        text-align: right;         /* keep the button on the right */
+                        padding-right: 10px;
+                        }
+                        #language-toggle a {
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: #666;
+                        }
+                        #language-toggle a:hover {
+                        color: #000;
+                        }
+                        </style>
+                </header><!-- /#banner -->
+                                
+  <section id="content" class="body">
+    <h1 class="entry-title">Projects</h1>
+    
+    <p>This section lists some of my past and current projects both from my academic career and personnal life. <br><br></p>
+<h1>Academic projects</h1>
+<h2>Sagemath</h2>
+<p>In 2019, I had the opportunity to participate to the <a href="https://www.sagemath.org/">SageMath project</a>, an open-source python-based formal calculus program. I contributed to the <a href="https://sagemanifolds.obspm.fr/">SageManifold</a> module, the first symbolic tool to allow for arbitrary (sub-)manifold manipulation. It is particularly useful for computation in the field of General Relativity.</p>
+<figure style="text-align: center;">
+    <img src="/images/Carter.jpg" alt="Diagramme de Penrose de l'espace de Schwarzschild" style="max-width: 70%; height: auto;" />
+    <figcaption>Penrose diagram of Schwarzschild spacetime generated using SageMath.</figcaption>
+</figure>
+
+<h2>Black Hole Trajectory Simulator</h2>
+<p>This project is the result of having implemented geodesic computation on arbitrary topologies in Sagemath. It is now very easy to simulated the propagation of light backwards in spacetime around a black hole. After some number-crunching, a complete image of an acretion disk can be simulated. My step-by-step notebook can be found <a href="https://nbviewer.org/github/sagemanifolds/SageManifolds/blob/master/Notebooks/SM_black_hole_rendering.ipynb">here</a>.</p>
+<figure style="text-align: center;">
+    <img src="/images/projection.jpg" alt="Euclidian immersion of the black hole, disk, and some rays" style="max-width: 80%; height: auto;" />
+    <figcaption>Euclidian immersion of the black hole, disk, and some rays.</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+    <img src="/images/bh_final.jpg" alt="Image finale, en couleurs semi-arbitraires." style="max-width: 70%; height: auto;" />
+    <figcaption>Final image, with semi-arbitrary colors.</figcaption>
+</figure>
+
+<h2>HighPT</h2>
+<p>HighPT is a Mathematica package for the analysis of high-energy semileptonic transition at hadron colliders. This program was concieved during my PhD thesis as a way for theorist to quickly estimate the likelyhood of a theory beyond the Standard Model of particle physics, in light of the most recent LHC results. HighPT is hosted and maintained on <a href="https://highpt.github.io/">github</a>.</p>
+<figure style="text-align: center;">
+    <img src="/images/DifferentialCrossSection.png" alt="Prediction de la section efficace en fonction de l'énergie" style="max-width: 70%; height: auto;" />
+    <figcaption>Prediction for a cross section in the Standard Model and in the presence of New Physics.</figcaption>
+</figure>
+
+<h1>Projets Personnels</h1>
+<h2>Timetable Solver</h2>
+<p>Timetables can be a sensitive topic for teachers. In June 2025, I privately help a middle school in France with elaborating schedules for the following school year. Professional tools are available, but often make it very hard to include new constraints, even if they seem intuitive at first glance. Constraints such as "these two classes must have French lesson at the same time" can quicly become impossible to track by hand.</p>
+<p>These kind of constraints, which are more and more required due to new teaching practices, often result in other constraints being neglected, such as professor preferences.</p>
+<p>This program can enumerate solutions without compromise, neither for the professors nor students. It makes it very easy to add new constraints. Based on the CP_SAT solver of <a href="https://developers.google.com/optimization">OR-Tools</a>, it is able to find an optimal solution for an entire school of 27 teachers and 50 classes, while respecting all personnal preferences and without any hole in the professor or student schedules.</p>
+<figure style="text-align: center;">
+    <img src="/images/EDT.jpg" alt="Example" style="max-width: 100%; height: auto;" />
+    <figcaption>Some example of timetables for students and professors.</figcaption>
+</figure>
+
+<h1>Work in Progress</h1>
+<ul>
+<li><strong>WIP</strong> - Symbolic Tensor Manipulation using subgraph isomrphism algorithm for simplification and rewriting.</li>
+<li><strong>WIP</strong> - Advancing Front algorithm for General Relativity numerical simulation in arbitrary topology.</li>
+<li><strong>WIP</strong> - This website, created using <a href="https://getpelican.com/">Pelican</a>, a python generator of static websites.</li>
+</ul>
+  </section>
+
+                <section id="extras" class="body">
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                <p>
+                                © Florentin JAFFREDO - All rights reserved
+                                &nbsp;|&nbsp;
+                                <a href="#top" id="back-to-top">Back to top</a>
+                                </p>
+                                
+                                
+                        </address><!-- /#about -->
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

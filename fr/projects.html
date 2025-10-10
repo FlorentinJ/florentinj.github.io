@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Mes Projets</title>
+                        <link rel="stylesheet" href="/fr/../theme/css/main.css" />
+                                <link href="fr/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Florentin JAFFREDO Atom Feed" />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/fr/">Florentin JAFFREDO</a></h1>
+                                <div id="language-toggle" style="text-align:right; margin-top:5px;">
+
+                                <a href="/projects.html">🇬🇧 English</a>
+                                </div>
+                        <nav><ul>
+
+                                
+                                                <li><a href="/fr/contact.html">Contact</a></li>
+                                                <li><a href="/fr/cv.html">CV</a></li>
+                                                <li class="active"><a href="/fr/projects.html">Mes Projets</a></li>
+                                                <li><a href="/fr/publications.html">Liste de Publications</a></li>
+                        </ul></nav>
+                        <style>
+                        #language-toggle {
+                        max-width: 800px;          /* match your body width (notmyidea uses ~800px) */
+                        margin: 0 auto;            /* center align within that width */
+                        text-align: right;         /* keep the button on the right */
+                        padding-right: 10px;
+                        }
+                        #language-toggle a {
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: #666;
+                        }
+                        #language-toggle a:hover {
+                        color: #000;
+                        }
+                        </style>
+                </header><!-- /#banner -->
+                                
+  <section id="content" class="body">
+    <h1 class="entry-title">Mes Projets</h1>
+    
+    <p>Cette section contient les différents projets, académiques et personnels, auquels j'ai contribué, ainsi que quelques idées pour l'avenir.<br><br></p>
+<h1>Projets Académiques</h1>
+<h2>Sagemath</h2>
+<p>En 2019, j'ai eu l'opportunité de participer au projet <a href="https://www.sagemath.org/">SageMath</a>, un programe open-source de calcul formel. J'ai contribué à compléter le module <a href="https://sagemanifolds.obspm.fr/">SageManifold</a> permettant de manipuler symboliquement des variétés, ainsi que leurs sous-variétés et leurs géodésiques, avec des applications en relativité générale.</p>
+<figure style="text-align: center;">
+    <img src="/fr/images/Carter.jpg" alt="Diagramme de Penrose de l'espace de Schwarzschild" style="max-width: 70%; height: auto;" />
+    <figcaption>Diagramme de Penrose de l'espace de Schwarzschild généré par SageMath.</figcaption>
+</figure>
+
+<h2>Simulateur de trou noir</h2>
+<p>Grace à l'implémentation du calcul des géodésiques dans SageMath sur les topologies arbitraires, il est devenu possible de facilement simuler la lumière émise par le disque d'accretion autour d'un trou noir. Mon notebook pédagogique peut être consulté <a href="https://nbviewer.org/github/sagemanifolds/SageManifolds/blob/master/Notebooks/SM_black_hole_rendering.ipynb">ici</a></p>
+<figure style="text-align: center;">
+    <img src="/fr/images/projection.jpg" alt="Immersion euclidienne du trou noir, du disque et de quelques rayons" style="max-width: 80%; height: auto;" />
+    <figcaption>Immersion euclidienne du trou noir, du disque et de quelques rayons.</figcaption>
+</figure>
+
+<figure style="text-align: center;">
+    <img src="/fr/images/bh_final.jpg" alt="Image finale, en couleurs semi-arbitraires." style="max-width: 70%; height: auto;" />
+    <figcaption>Image finale, en couleurs semi-arbitraires.</figcaption>
+</figure>
+
+<h2>HighPT</h2>
+<p>HighPT est un package Mathematica dédié à l'analyse de la distribution d'évenements semileptoniques à haute énergie dans les collisioneurs de hadrons. Ce programme, élaboré durant ma thèse, a pour objectif d'aider les théoricens à estimer la vraisemblance de modèles de nouvelle physique à partir des données récentes du LHC. Le projet est hébergé sur <a href="https://highpt.github.io/">github</a>.</p>
+<figure style="text-align: center;">
+    <img src="/fr/images/DifferentialCrossSection.png" alt="Prediction de la section efficace en fonction de l'énergie" style="max-width: 70%; height: auto;" />
+    <figcaption>Prediction d'une section efficace de collision dans le modèle standard et en présence de nouvelle physique.</figcaption>
+</figure>
+
+<h1>Projets Personnels</h1>
+<h2>Emploi du temps</h2>
+<p>La gestion des emplois du temps est un point difficile chez les enseignants. En juin 2025, dans un cadre privé, j'ai proposé mon aide dans un collège de la région parisienne pour l'élaboration des emplois du temps 2025-2026. Les outils professionnels existant sont puissants, mais rendent parfois difficile l'implémentation de contraintes pourtant intuitives telles que "les élèves de ces deux classes doivent avoir cours de français en même temps".</p>
+<p>Ce genre de contraintes est de plus en plus présents à cause de l'évolution des pratiques d'enseignement, et sont la plupart du temps résolues manuellement, ce qui nécessite souvent un compromis sur d'autres contraintes ou préférences.</p>
+<p>Ce programme a pour but d'énumérer des solutions sans compromis aussi bien pour les élèves que pour les professeurs. Basé sur le solveur CP_SAT d'<a href="https://developers.google.com/optimization?hl=fr">OR-Tools</a>, il est capable de générer des emplois du temps pour tout un établissement (27 classes, 50 professeurs) en respectant l'intégralité des préférences personnelles, sans aucun trou ni pour les élèves ni pour les profs.</p>
+<figure style="text-align: center;">
+    <img src="/fr/images/EDT.jpg" alt="Example" style="max-width: 100%; height: auto;" />
+    <figcaption>Example d'emploi du temps d'une classe de SEGPA (sans option ni demi-groupe) et d'un professeur de français.</figcaption>
+</figure>
+
+<h1>Projets Personnels en cours</h1>
+<ul>
+<li><strong>WIP</strong> - Système de calcul formel tensoriel, utilisant les isomorphismes de graphes pour la simplification et les manipulations.</li>
+<li><strong>WIP</strong> - Algorithm à front progressif pour la simulation numérique de la Relativité Générale en topologie arbitraire.</li>
+<li><strong>WIP</strong> - Ce site, créée à l'aide de <a href="https://getpelican.com/">Pelican</a>, un générateur python de sites statiques.</li>
+</ul>
+  </section>
+
+                <section id="extras" class="body">
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                               <p>
+                                © Florentin JAFFREDO - Tous droits réservés
+                                &nbsp;|&nbsp;
+                                <a href="#top" id="back-to-top">Haut de page</a>
+                                </p>
+                                
+                                
+                        </address><!-- /#about -->
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

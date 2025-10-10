@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Florentin JAFFREDO</title><link href="/fr/" rel="alternate"></link><link href="fr/feeds/all.atom.xml" rel="self"></link><id>/fr/</id><updated>2025-10-08T00:00:00+02:00</updated><entry><title>Bienvenue sur mon site personnel</title><link href="/fr/index.html" rel="alternate"></link><published>2025-10-08T00:00:00+02:00</published><updated>2025-10-08T00:00:00+02:00</updated><author><name>Florentin</name></author><id>tag:None,2025-10-08:/fr/index.html</id><summary type="html">&lt;figure style="text-align: center;"&gt;
+    &lt;img src="/fr/images/portrait.jpeg" alt="me" style="max-width: 50%; height: auto;" /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Je suis chercheur et ingénieur, spécialisé en physique des particules.&lt;/p&gt;
+&lt;p&gt;Vous trouverez sur ce site des informations personnelles me concernant, mon CV, une liste de publications, ainsi que quelques projets auquel j'ai eu la chance de participer.&lt;/p&gt;
+&lt;p&gt;Mots Clés: Calcul Symbolique, Python, Mathematica, Physique des Hautes Energies, Optimisation, Analyse de …&lt;/p&gt;</summary><content type="html">&lt;figure style="text-align: center;"&gt;
+    &lt;img src="/fr/images/portrait.jpeg" alt="me" style="max-width: 50%; height: auto;" /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Je suis chercheur et ingénieur, spécialisé en physique des particules.&lt;/p&gt;
+&lt;p&gt;Vous trouverez sur ce site des informations personnelles me concernant, mon CV, une liste de publications, ainsi que quelques projets auquel j'ai eu la chance de participer.&lt;/p&gt;
+&lt;p&gt;Mots Clés: Calcul Symbolique, Python, Mathematica, Physique des Hautes Energies, Optimisation, Analyse de données, méthodes de Monte-Carlo, solveurs SAT-MILP.&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Welcome to my personal website</title><link href="/index.html" rel="alternate"></link><published>2025-10-08T00:00:00+02:00</published><updated>2025-10-08T00:00:00+02:00</updated><author><name>Florentin</name></author><id>tag:None,2025-10-08:/index.html</id><content type="html">&lt;figure style="text-align: center;"&gt;
+    &lt;img src="/fr/images/face.jpg" alt="me" style="max-width: 70%; height: auto;" /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I am a physicist and engineer, specialized in particle physics.&lt;/p&gt;
+&lt;p&gt;This website is a gathering of personnal information. You may find my CV, a list of publications, and some of my projects.&lt;/p&gt;
+&lt;p&gt;Keywords: Symbolic computation, Python, Mathematica, High Energy Physics, Flavor Physics, Optimization, Data Analysis, Monte-Carlo Methods, SAT-MILP solvers.&lt;/p&gt;</content><category term="misc"></category></entry></feed>
