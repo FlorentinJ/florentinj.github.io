@@ -83,10 +83,29 @@
     <figcaption>Example d'emploi du temps d'une classe de SEGPA (sans option ni demi-groupe) et d'un professeur de français.</figcaption>
 </figure>
 
-<h1>Projets en cours</h1>
+<h2>Graph Rewriting (Work in Progress)</h2>
+<p>Un système de réécriture de graphe est un ensemble d'algorithmes permettant de modifer une partie d'un graphe de manière conditionnelle. Ce projet utilise le package Python <a href="https://networkx.org/">NetworkX</a> pour détecter des motifs dans le graphe initial, à l'aide d'algorithmes de recherche d'isomorphismes. Les motifs à détecter et leur remplacement sont également fournis sous la forme de graphe.</p>
+<p>Ce projet a des applications dans plusieurs sous-projets indépendants :</p>
+<h3>Algèbre Tensorielle Symbolique</h3>
+<p>En calcul formel, les tenseurs peuvent être représentés à l'aide de graphes, où chaque tenseur correspond à un nœud, et chaque contraction d'indice à une arrête entre deux nœuds. </p>
+<p>Traditionnellement dans les logiciels de calcul symbolique, les indices contractés sont "canonisé", ce qui permet par exemple de prouver l'égalité entre deux expressions. Cependant, la canonisation ne peut s'effectuer que sur l'expression totale, ce qui rend difficile certaines opérations telles que la factorisation. La représentation par graphes permet également de simplifier la gestion des symétries.</p>
+<p>A terme, l'objectif est de permettre les manipulations de tenseurs symboliques au sein du projet <a href="https://www.sagemath.org/">SageMath</a>, alternative open-source à Mathematica.</p>
+<figure style="text-align: center;">
+    <img src="/fr/images/birdtracks.jpg" alt="birdtracks" style="max-width: 100%; height: auto;" />
+    <figcaption>Exemple d'expressions tensorielles constituées de contractions de tenseurs de l'algèbre du groupe symétrique, en notation graphique. Issu de 1707.07280.</figcaption>
+</figure>
+
+<h3>Transpileur - Compilateur</h3>
+<p>Si l'on considère un arbre syntaxique comme un graphe, il est possible de le manipuler petit à petit avec des règles précises afin de le transformer, soit en arbre syntaxique d'un autre langage, soit en langage machine directement. Couplé à un SAT-solveur (tel que <a href="https://developers.google.com/optimization?hl=fr">OR-Tools</a>), il est possible d'obtenir un compilateur optimisé.</p>
+<figure style="text-align: center;">
+    <img src="/fr/images/compile.jpg" alt="graphes" style="max-width: 100%; height: auto;" />
+    <figcaption>Une étape de compilation : séparer les appels de fonctions en 3 étapes intermédiaires.  Le graphe représente le programme au centre.</figcaption>
+</figure>
+
+<p>Ce compilateur n'a pour l'instant qu'une visée ludique (par exemple pour compléter un <a href="https://imgur.com/a/60-instr-s-factorio-cpu-4tyw80G">CPU assemblé dans un jeu vidéo</a>).</p>
+<h1>Autres projets en cours</h1>
 <ul>
-<li><strong>WIP</strong> - Système de calcul formel tensoriel, utilisant les isomorphismes de graphes pour la simplification et les manipulations.</li>
-<li><strong>WIP</strong> - Algorithm à front progressif pour la simulation numérique de la Relativité Générale en topologie arbitraire.</li>
+<li><strong>WIP</strong> - Algorithme à front progressif pour la simulation numérique de la Relativité Générale en topologie arbitraire.</li>
 <li><strong>WIP</strong> - Ce site, créé à l'aide de <a href="https://getpelican.com/">Pelican</a>, un générateur python de sites statiques.</li>
 </ul>
   </section>

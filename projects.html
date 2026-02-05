@@ -75,7 +75,7 @@
 
 <h1>Projets Personnels</h1>
 <h2>Timetable Solver</h2>
-<p>Timetables can be a sensitive topic for teachers. In June 2025, I privately help a middle school in France with elaborating schedules for the following school year. Professional tools are available, but often make it very hard to include new constraints, even if they seem intuitive at first glance. Constraints such as "these two classes must have French lesson at the same time" can quicly become impossible to track by hand.</p>
+<p>Timetables can be a sensitive topic for teachers. In June 2025, I privately helped a middle school in France with elaborating schedules for the following school year. Professional tools are available, but often make it very hard to include new constraints, even if they seem intuitive at first glance. Constraints such as "these two classes must have French lesson at the same time" can quicly become impossible to track by hand.</p>
 <p>This kind of constraints, which are more and more required due to new teaching practices, often result in other constraints being neglected, such as professor preferences.</p>
 <p>This program can enumerate solutions without compromise, neither for the professors nor students. It makes it very easy to add new constraints. Based on the CP_SAT solver of <a href="https://developers.google.com/optimization">OR-Tools</a>, it is able to find an optimal solution for an entire school of 27 teachers and 50 classes, while respecting all personnal preferences and without any hole in the professor or student schedules.</p>
 <figure style="text-align: center;">
@@ -83,9 +83,28 @@
     <figcaption>Some example of timetables for students and professors.</figcaption>
 </figure>
 
+<h2>Graph Rewriting (Work in Progress)</h2>
+<p>A graph rewriting system is a set of algorithms that can conditionnaly modify part of a graph. This project uses the <a href="https://networkx.org/">NetworkX</a> Python package to detect patterns in the input graph using subgraph-isomorphism algorithms. Patterns and their replacement are also provided in graph format.</p>
+<p>This project is used in several independant sub-projects:</p>
+<h3>Symbolic Tensor Algebra</h3>
+<p>In Computer Algebra Systems (CAS), symbolic tensors can be reprensented as graphs, where each basic tensor is a node, and each contraction of indices an edge between two nodes.</p>
+<p>Traditionnaly, CAS systems instead try to rename the contracted indices in a canonized way, which makes it possible for example to compare two tensorial expressions. However, canonization can only be applied on full expressions, which can make some operations difficult or impossible, such as factorization. Graphs can also explicitely keep the symmetry of some tensor expression, which is always lost in the traditionnal representation.</p>
+<p>The goal of this project is to make symbolic tensor algebra a supported feature of the <a href="https://www.sagemath.org/">SageMath</a> software.</p>
+<figure style="text-align: center;">
+    <img src="/images/birdtracks.jpg" alt="birdtracks" style="max-width: 100%; height: auto;" />
+    <figcaption>Example of tensor expressions built from contractions of elements of the symmetric group algebra in graphical notation. From 1707.07280.</figcaption>
+</figure>
+
+<h3>Transpiler - Compiler</h3>
+<p>If we consider an abstract syntax tree as a graph, it is possible to apply patterns to this graph in a specific way to transform it, either to the syntax of another language, or directly to machine code. When coupled to a SAT-solver (like <a href="https://developers.google.com/optimization?hl=fr">OR-Tools</a>), the resulting compiled programs can be further optimized.</p>
+<figure style="text-align: center;">
+    <img src="/images/compile.jpg" alt="graphes" style="max-width: 100%; height: auto;" />
+    <figcaption>A compilation step: separate function calls into 3 intermediate steps. The left graph is a direct representation of the program in the center.</figcaption>
+</figure>
+
+<p>This compiler does not currently have practical applications appart from <a href="https://imgur.com/a/60-instr-s-factorio-cpu-4tyw80G">video games</a>.</p>
 <h1>Work in Progress</h1>
 <ul>
-<li><strong>WIP</strong> - Symbolic Tensor Manipulation using subgraph isomorphism algorithm for simplification and rewriting.</li>
 <li><strong>WIP</strong> - Advancing Front algorithm for General Relativity numerical simulation in arbitrary topology.</li>
 <li><strong>WIP</strong> - This website, created using <a href="https://getpelican.com/">Pelican</a>, a python generator of static websites.</li>
 </ul>
